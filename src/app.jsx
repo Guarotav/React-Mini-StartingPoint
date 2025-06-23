@@ -81,7 +81,7 @@ const fillGrid = () => {
   return (
     <div className="app">
       <h1>Grid Maker</h1>
-      <Table grid={grid} />
+      <Table grid={grid} onCellClick={handleCellClick}/>
       <div className="controls">
         <button id="add-row" onClick={addRow}>Add Row</button>
         <button id="delete-row" onClick={deleteRow}>Delete Row</button>
