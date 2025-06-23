@@ -112,7 +112,7 @@ const App = () => {
         <button id="delete-column" onClick={deleteColumn}>
           Delete Column
         </button>
-        <select id="color-select" value={selectedColor}>
+        <select id="color-select" onChange={handleColorChange} value={selectedColor}>
           <option value="white">White</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
@@ -121,7 +121,7 @@ const App = () => {
           <option value="purple">Purple</option>
           <option value="orange">Orange</option>
         </select>
-        <button id="fill-uncolored">Fill Uncolored</button>
+        <button id="fill-uncolored" onClick={fillUncoloredCells}>Fill Uncolored</button>
         <button id="fill-grid" onClick={fillGrid}>
           Fill Grid
         </button>
